@@ -21,14 +21,19 @@
             "MpesaLaravelSdk\\Tests\\": "tests/"
         }
     },
+    "scripts": {
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=mpesa_config --ansi --force"
+        ]
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "\\Ssiva\\MpesaLaravelSdk\\MpesaServiceProvider"
-            ]
-        },
-        "aliases": {
-            "MpesaDaraja": "\\Ssiva\\MpesaLaravelSdk\\MpesaFacade"
+            ],
+            "aliases": {
+                "MpesaDaraja": "\\Ssiva\\MpesaLaravelSdk\\MpesaFacade"
+            }
         }
     },
     "authors": [
