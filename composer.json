@@ -1,0 +1,31 @@
+{
+    "name": "ssiva/mpesa-laravel-sdk",
+    "description": "This package provides a seamless integration of M-PESA Daraja APIs in Laravel applications.",
+    "type": "library",
+    "require": {
+        "ssiva/mpesa-daraja": "^4",
+        "illuminate/support": "^10.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "mockery/mockery": "^1.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ssiva\\MpesaLaravelSdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MpesaLaravelSdk\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Simon Siva",
+            "email": "simonsiva13@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
