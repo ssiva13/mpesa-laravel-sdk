@@ -21,6 +21,16 @@
             "MpesaLaravelSdk\\Tests\\": "tests/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Ssiva\\MpesaLaravelSdk\\MpesaServiceProvider"
+            ]
+        },
+        "aliases": {
+            "MpesaDaraja": "\\Ssiva\\MpesaLaravelSdk\\MpesaFacade"
+        }
+    },
     "authors": [
         {
             "name": "Simon Siva",

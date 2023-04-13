@@ -1,5 +1,7 @@
 <?php
 
+namespace Ssiva\MpesaLaravelSdk;
+
 use Illuminate\Support\Facades\Facade;
 
 /**
