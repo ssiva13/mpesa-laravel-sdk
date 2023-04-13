@@ -21,11 +21,6 @@
             "MpesaLaravelSdk\\Tests\\": "tests/"
         }
     },
-    "scripts": {
-        "post-install-cmd": [
-            "@php artisan vendor:publish --tag=mpesa_config --ansi --force"
-        ]
-    },
     "extra": {
         "laravel": {
             "providers": [
@@ -35,9 +30,17 @@
                 "MpesaDaraja": "Ssiva\\MpesaLaravelSdk\\MpesaFacade"
             },
             "config": [
-                "src/config/mpesa.php"
+                "config/mpesa.php"
             ]
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan vendor:publish --tag=mpesa_config --force"
+        ],
+        "post-update-cmd": [
+            "php artisan vendor:publish --tag=mpesa_config --force"
+        ]
     },
     "authors": [
         {

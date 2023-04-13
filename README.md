@@ -19,6 +19,13 @@ With this package, developers can seamlessly integrate M-PESA Daraja APIs in the
     ```
     composer require ssiva/mpesa-laravel-sdk
     ```
+
+- Run the command below to publish the package config file `config/mpesa.php`:
+
+    ```shell
+    php artisan vendor:publish --tag=mpesa_config
+    ```
+
 ### Configuration
 
 Set up the config values as required
