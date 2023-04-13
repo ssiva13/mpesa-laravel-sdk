@@ -24,12 +24,23 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\Ssiva\\MpesaLaravelSdk\\MpesaServiceProvider"
+                "Ssiva\\MpesaLaravelSdk\\MpesaServiceProvider"
+            ],
+            "aliases": {
+                "MpesaDaraja": "Ssiva\\MpesaLaravelSdk\\MpesaFacade"
+            },
+            "config": [
+                "config/mpesa.php"
             ]
-        },
-        "aliases": {
-            "MpesaDaraja": "\\Ssiva\\MpesaLaravelSdk\\MpesaFacade"
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+
+        ],
+        "post-update-cmd": [
+
+        ]
     },
     "authors": [
         {
