@@ -22,7 +22,7 @@
         }
     },
     "scripts": {
-        "post-update-cmd": [
+        "post-install-cmd": [
             "@php artisan vendor:publish --tag=mpesa_config --ansi --force"
         ]
     },
@@ -33,7 +33,10 @@
             ],
             "aliases": {
                 "MpesaDaraja": "\\Ssiva\\MpesaLaravelSdk\\MpesaFacade"
-            }
+            },
+            "config": [
+                "src/config/mpesa.php"
+            ]
         }
     },
     "authors": [
