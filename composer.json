@@ -29,10 +29,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\Ssiva\\MpesaLaravelSdk\\MpesaServiceProvider"
+                "Ssiva\\MpesaLaravelSdk\\MpesaServiceProvider"
             ],
             "aliases": {
-                "MpesaDaraja": "\\Ssiva\\MpesaLaravelSdk\\MpesaFacade"
+                "MpesaDaraja": "Ssiva\\MpesaLaravelSdk\\MpesaFacade"
             },
             "config": [
                 "src/config/mpesa.php"
