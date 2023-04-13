@@ -29,6 +29,7 @@ class MpesaServiceProvider extends ServiceProvider
     {
         $this->app->bind('Ssiva\MpesaDaraja\Mpesa', function ($app) {
             $config = $app['config']->get('mpesa');
+            $config = $config ?: [] ;
             return new Mpesa($config);
         });
     }
