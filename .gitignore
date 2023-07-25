@@ -2,13 +2,3 @@
 /.idea
 composer.lock
 
-
-        $mpesaDaraja = new MpesaDaraja();
-
-        // authenticate
-        $edffdf = $mpesaDaraja::authenticate();
-        dd($edffdf);
-
-
-MPESA_KEY="9zJh9aYD2b5WaAOeYW2AIREqi1ePPj7O"
-MPESA_SECRET="hEhooZsfwZpSOdTe"
